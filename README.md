@@ -1,7 +1,9 @@
 USED TECHNOLOGIES 
 - REACT: 
-  - React Hooks
+  - Hooks
   - Context
   - Router
 - SASS
-- Firebase
+- Firebase 
+  - Authentication
+  - Database
