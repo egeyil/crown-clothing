@@ -1,0 +1,35 @@
+.cart-item-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  img {
+    width: 30%;
+  }
+
+  .item-details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 20px;
+
+    .name {
+      font-size: 16px;
+    }
+  }
+}
