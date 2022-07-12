@@ -22,7 +22,7 @@ const removeCartItem = (cartItems, productToRemove) => {
   const existingCartItem = cartItems.find((cartItem) => cartItem.id === productToRemove.id);
   // If it does, decrease the quantity and return, don't go the next line
   if (existingCartItem.quantity === 1) {
-    clearCartItem(cartItems, productToRemove);
+    return cartItems.filter((cartItem) => cartItem.id !== productToRemove.id);
   }
   // return new array with modified cartItems / new cartItem
   return cartItems.map((cartItem) =>
